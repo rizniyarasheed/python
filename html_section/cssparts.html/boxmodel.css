@@ -1,0 +1,22 @@
+.top{
+    background-color: rgb(158, 224, 43);
+    height: 80px;
+    width: 60%;
+    margin-left: 20%;
+    padding-top:10px;
+  
+}
+
+.bottom{
+    background-color: darkolivegreen;
+    height: 80px;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 30%;
+    padding-top: 10px;
+    padding-left:50px;
+  font-size:300% ;
+  font-weight: 700;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration:underline;
+}

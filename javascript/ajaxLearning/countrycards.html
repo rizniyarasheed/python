@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" class="cntry" name="" id="" placeholder="enter country name">
+    <button onclick="fetchData() ">Fetch</button>
+    <div class="card" style="width: 18rem;">
+        <div class="img">
+            <img src="" class="card-img-top" alt="">
+        </div>
+
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+            <a href="#" class="btn btn-primary"></a>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    function fetchData() {
+        var cntryname = document.querySelector(".cntry").value
+        var request = new XMLHttpRequest()
+        request.open("get", `https://jsonplaceholder.typicode.com/users/${cntryname}`)
+        request.send()
+        request.onreadystatechange = () => {
+            if (request.readyState == 4) {
+                if (request.status >= 200 & request.status < 300) {
+                    var dataset = JSON.parse(request.responseText)
+                    console.log(dataset)
+
+
+                    var currencies = (dataset[0].currencies[0].name);
+                    console.log(currencies)
+
+                    var population = (dataset[0].population);
+                    var name = (dataset[0].name);
+                    var flag = (dataset[0].flag);
+                    console.log(flag);
+
+                    var data = ""
+                    data = data + `<img src=${flag}>`
+
+                    document.querySelector(".card-title").innerHTML = name
+                    document.querySelector(".card-text").innerHTML = currencies
+                    document.querySelector(".card-textt").innerHTML = population
+                    document.querySelector(".card-img-top").innerHTML = flag
+                    document.querySelector(".imgdiv").innerHTML=data
+
+                }
+            }
+        }
+
+    }
+</script>
+
+</html>

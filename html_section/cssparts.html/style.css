@@ -1,0 +1,15 @@
+/*
+tagname,id,class{
+    property::-ms-value;
+    property1::-ms-value;
+*/
+body{
+    color:rgb(219, 145, 55);
+   background-color: darksalmon;
+}
+h1{
+    color:brown;
+}
+
+h2{
+    color:#538a32;

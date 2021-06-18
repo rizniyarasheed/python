@@ -1,0 +1,55 @@
+h1{
+    font-family: 'Akaya Telivigala', cursive;
+    color:darkmagenta ;
+   /* margin-left:26% ;*/
+   text-align: center;
+}
+
+div{
+    height: 500px;
+    width:13%;
+    margin-left:5%;
+    margin-top:4%;
+    border-width: 6px;
+
+}
+
+.one{
+    background-color: blue;
+   float: left;
+    /*height: 500px;
+    width:15%;
+    margin-left:10%;*/
+}
+
+.two{
+    background-color:crimson;
+    float:left;
+  
+   /* margin-left: 33%;
+    margin-top:-66%;
+    height: 500px;
+    width:150px;*/
+}
+
+.three{
+    background-color:darkred;
+    float:left;
+  
+   /* margin-left: 56%;
+    margin-top:-66%;
+    height: 500px;
+    width:150px;*/
+    
+}
+
+.four{
+    background-color:darkgreen;
+    float:left;
+ 
+    /*margin-left: 80%;
+    margin-top:-66%;
+    height: 500px;
+    width:150px;*/
+  
+}

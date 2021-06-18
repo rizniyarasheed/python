@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Todos</h1>
+   
+
+   <div class="todos">
+
+</div>
+
+   
+</body>
+
+
+<script>
+
+    var request=new XMLHttpRequest()
+    request.open("get","https://jsonplaceholder.typicode.com/todos")
+    request.send()
+
+    request.onreadystatechange=()=>{
+        if(request.readyState==4){
+            if((request.status>199)&(request.status<300)){
+                var todos=JSON.parse(request.responseText)
+                //data.forEach(obj=>console.log(obj.name+obj.email))\
+                let completed_todos=todos.filter(todo=>todo.completed==true)
+                console.log(completed_todos);
+
+                //data.forEach(element=>console.log(element.title));
+                //list all title whose status is completed
+                //for(let details of data){
+                  //  if(details.completed==true){
+                    //    console.log(details);
+                    //}
+                //}  
+                //another method using filter
+
+
+                let html_data=""
+                for(let todo of completed_todos){
+                    html_data+=`<p>${todo.userId} ${todo.title}</p>`
+                }
+                document.querySelector(".todos").innerHTML=html_data
+        
+
+
+            }
+        }
+    }
+</script>
+</html>

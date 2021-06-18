@@ -1,0 +1,32 @@
+
+
+.head{
+    background-color: crimson;
+    border-width: 40px;
+    height: 140px;
+}
+h1{
+    color: white;
+    margin-top: 5%;
+}
+h2{
+   
+    margin-left: 5%;
+    margin-top: 3%;
+
+}
+.ln1{
+    border:2px solid rgb(155, 63, 63);
+    position: relative;
+    top:100%;
+}
+.ln2{
+    border:2px solid rgb(155, 63, 63);
+    position: relative;
+    top:5%;
+}
+.ln3{
+    border:2px solid rgb(155, 63, 63);
+    position: relative;
+    top:5%;
+}

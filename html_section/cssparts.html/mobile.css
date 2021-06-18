@@ -1,0 +1,51 @@
+body{
+   background-image:url("bgimg.png");
+}
+h1{
+    color:rgb(255, 247, 251);
+    text-align: center;
+}
+
+#Nokia{
+    background-color:darkseagreen;
+    border-style: solid;
+    border-color: honeydew;
+    border-width:2px;
+    width: 30%;
+   
+}
+
+#Samsung{
+    background-color: rgb(75, 129, 129);
+    border-style:solid;
+    border-color: ivory;
+    border-width: 2px;
+    width: 30%;
+    
+
+}
+
+.first{
+    background-color:salmon;
+    border-style:solid;
+    border-color:pink;
+    border-width: 2px;
+    width: 30%;
+    
+
+}
+
+#ip{
+    color:thistle;
+    text-align: center;
+}
+
+#Nh{
+    color:floralwhite;
+    text-align: center;
+}
+
+.SM{
+    color:rgb(219, 216, 215);
+    text-align: center;
+}

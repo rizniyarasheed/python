@@ -1,6 +1,6 @@
-#print employee details whose designation developer
+#1)print employee details whose designation developer
 
-#no of employees as developer
+#2)no of employees as developer
 
 #3)print employee details who have highest salary
 
@@ -18,25 +18,37 @@ class Employees:
 
 f=open("employees.txt","r")
 emplist=[]
+sallist=[]
 
 for lines in f:
     #1000,anoob,developer,2,25000
     eid,name,desig,exp,salary=lines.rstrip("\n").split(",")
     emplist.append(Employees(eid,name,desig,exp,salary))
 
-#for employee in emplist:
-#    #print(employee)
-#     if desig==developer:
-#         developer+=developer
-#print(employee.eid,employee.name,employee.salary,employee.exp)
-#print(developer)
-#
-#3)=>
-sallist=[]
 
-for employee in emplist:
-    sallist.append(employee.salary)
-print(max(sallist))
+
+
+#1===>print employee details whose designation developer
+devop=list(filter(lambda emp:emp.desig=="developer",emplist))
+for emp in devop:
+    print(emp)
+
+
+
+
+#2===> no of employees as developer
+cnt=len(devop)
+print(cnt)
+#or if devop list does'nt create situation
+cnt=len(list(filter(lambda emp:emp.desig=="developer",emplist)))
+print(cnt)
+
+
+#3===>print employee details who have highest salary
+maxsal=max(list(map(lambda emp:emp.salary,emplist)))
+print(maxsal)
+
+
 
 #print highest sal employee name
 for employee in emplist:

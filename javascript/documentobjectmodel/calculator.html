@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style_calc.css">
+    <script src="calc_script.js"></script>
+</head>
+
+<body>
+
+    <div class="container c1">
+
+        <input type="text" class="result">
+        <div class="firstrow">
+            <input type="button" name="" value="MC" class="button" onclick="dispBox('MC')">
+            <input type="button" name="" value="M+" class="button" onclick="dispBox('M+')">
+            <input type="button" name="" value="/" class="button" onclick="dispBox('/')">
+            <input type="button" name="" value="*" class="button" onclick="dispBox('*')">
+        </div>
+
+        <div class="secondrow">
+            <input type="button" name="" value="7" class="button" onclick="dispBox('7')">
+            <input type="button" name="" value="8" class="button" onclick="dispBox('8')">
+            <input type="button" name="" value="9" class="button" onclick="dispBox('9')">
+            <input type="button" name="" value="-" class="button" onclick="dispBox('-')">
+        </div>
+
+        <div class="thirdrow">
+            <input type="button" name="" value="4" class="button" onclick="dispBox('4')">
+            <input type="button" name="" value="5" class="button" onclick="dispBox('5')">
+            <input type="button" name="" value="6" class="button" onclick="dispBox('6')">
+            <input type="button" name="" value="+" class="button" onclick="dispBox('+')">
+        </div>
+
+        <div class="fourthrow">
+            <input type="button" name="" value="1" class="button" onclick="dispBox('1')">
+            <input type="button" name="" value="2" class="button" onclick="dispBox('2')">
+            <input type="button" name="" value="3" class="button" onclick="dispBox('3')">
+            <input type="button" name="" value="=" class="button" onclick="print()">
+        </div>
+
+        <div class="fifthrow">
+            <input type="button" name="" value="0" class="button" onclick="dispBox('0')">
+            <input type="button" name="" value="." class="button" onclick="dispBox('.')">
+            <input type="button" name="" value="Del" class="button" style=background-color:red onclick="del()">
+        </div>
+    </div>
+</body>
+
+</html>

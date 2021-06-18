@@ -1,0 +1,94 @@
+body{
+    height: 1000px;
+}
+
+.topdiv{
+    background-color:#5e068a ;
+    color:white;
+    font-size: 13px;
+    padding-top: 10px;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-width:50px;
+    height: 40px;
+}
+
+.navbar{
+    background-color: white;
+    position:sticky;
+    
+}
+
+a{
+    color:black;
+    font-size: 14px;
+    font-weight: 700;
+   
+
+}
+#navbarSupportedContent{
+    position: relative;
+    left: 40%;
+}
+h2{
+    color:#5e068a;
+}
+span{
+    color:#5e068a99;
+}
+.cont1{
+    margin-left: 40px;
+    margin-top: 5%;
+}
+.fontclass{
+    font-size: 15px;
+    line-height: 30px;
+}
+button{
+    padding: 16px 27px;
+    font-weight: 600;
+    margin-top: 21px;
+    border-radius: 50px;
+    border: 2px solid #5e068a;
+    background: #5e068a;
+    color: white;
+    width: 155px;
+
+}
+.btt1{
+    position:relative;
+    top:10px;
+    right:7px;
+}
+button:hover{
+    padding: 16px 27px;
+    font-weight: 600;
+    margin-top: 21px;
+    border-radius: 50px;
+    border: 2px solid #5e068a ;
+    background:white ;
+    color: #5e068a;
+}
+.cont2{
+    position: relative;
+    top:75px;
+}
+.cont3{
+    position:relative;
+    top:95px;
+}
+
+.cont4{
+    position: relative;
+    top: 150px;
+    align-items: center;
+
+}
+.btt2{
+    width: 160px;
+    font-size: 14px;
+    position: relative;
+    left: 60px;
+}

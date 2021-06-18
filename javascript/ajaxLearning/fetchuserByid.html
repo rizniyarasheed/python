@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <label for="">EnterUserID</label>
+    <input type="text" class="inpt">
+    <button onclick="fetchUser()">FetchData</button>
+
+<table border="1">
+    <tr>
+        <td>name</td>
+        <td>username</td>
+        <td>email</td>
+        <td>phone</td>
+    </tr>
+
+    <tbody class="result">
+       
+    </tbody>
+</table>
+</body>
+
+<script>
+    function fetchUser() {
+        var id = document.querySelector(".inpt").value
+        var request = new XMLHttpRequest()
+        request.open("get", `https://jsonplaceholder.typicode.com/users/${id}`)
+        request.send()
+        request.onreadystatechange = () => {
+            if (request.readyState == 4) {
+                if (request.status >= 200 & request.status < 300) {
+                    var userData = JSON.parse(request.responseText)
+                    var html_sec=""
+                    html_sec+=`<tr><td>${userData.name}</td><td>${userData.username}</td><td>${userData.email}</td><td>${userData.phone}</td></tr>`
+
+                    document.querySelector(".result").innerHTML=html_sec
+
+                }
+                else{
+                    console.log("error");
+                    document.querySelector(".result").innerHTML="there is no user with provided id"
+                }
+            }
+        }
+    }
+</script>
+
+</html>
